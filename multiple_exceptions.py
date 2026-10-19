@@ -1,1 +1,14 @@
 
+# Handling Multiple Exceptions
+
+try:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+
+    print("Result:", a / b)
+
+except ValueError:
+    print("Please enter valid numbers.")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
