@@ -1,8 +1,14 @@
 # Class and Object
 
 class Student:
-    def display(self):
-        print("Welcome to Python OOP!")
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-student1 = Student()
+    def display(self):
+        print("Student Name:", self.name)
+        print("Student Age:", self.age)
+
+
+student1 = Student("Samarth", 21)
 student1.display()
