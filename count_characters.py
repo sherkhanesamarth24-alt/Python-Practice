@@ -1,19 +1,11 @@
-# Count Letters, Digits, and Spaces
+# Class and Object
 
-text = input("Enter a string: ")
+class Student:
+    def display(self):
+        print("Welcome to Python OOP!")
+        print("My name is Samarth.")
+        print("I am learning Python.")
+        print("This is my first class and object program.")
 
-letters = 0
-digits = 0
-spaces = 0
-
-for char in text:
-    if char.isalpha():
-        letters += 1
-    elif char.isdigit():
-        digits += 1
-    elif char.isspace():
-        spaces += 1
-
-print("Letters:", letters)
-print("Digits:", digits)
-print("Spaces:", spaces)
+student1 = Student()
+student1.display()
