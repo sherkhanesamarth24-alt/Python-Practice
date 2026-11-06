@@ -1,8 +1,12 @@
-a = [1,2,3]
-b = a
-c = [1,2,3]
 
-print("a is b:" , a is b)
-print("a is c:" , a is c)
+# Identity Operators: is and is not
 
-print("a is not c:" , a is not c) 
+list1 = [10, 20, 30]
+list2 = list1
+list3 = [10, 20, 30]
+
+print("list1 is list2:", list1 is list2)
+print("list1 is list3:", list1 is list3)
+
+print("list1 is not list3:", list1 is not list3)
+print("list2 is not list3:", list2 is not list3)
