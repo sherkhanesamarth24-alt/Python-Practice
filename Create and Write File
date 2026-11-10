@@ -1,1 +1,13 @@
+try:
+    file = open("student.txt", "w")
 
+    file.write("Student Name: Samarth\n")
+    file.write("Course: AIML\n")
+    file.write("Status: Present\n")
+
+    file.close()
+
+    print("File created successfully!")
+
+except Exception as e:
+    print("Error:", e)
