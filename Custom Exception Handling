@@ -1,1 +1,20 @@
+class InvalidMarksError(Exception):
+    pass
 
+
+try:
+    marks = int(input("Enter your marks: "))
+
+    if marks < 0 or marks > 100:
+        raise InvalidMarksError("Marks must be between 0 and 100!")
+
+    print("Your marks:", marks)
+
+except InvalidMarksError as e:
+    print("Error:", e)
+
+except ValueError:
+    print("Please enter valid marks!")
+
+finally:
+    print("Marks checking completed.")
