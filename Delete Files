@@ -1,1 +1,17 @@
+import os
 
+try:
+    if os.path.exists("student.txt"):
+
+        os.remove("student.txt")
+
+        print("File deleted successfully!")
+
+    else:
+        print("File does not exist!")
+
+except PermissionError:
+    print("Permission denied!")
+
+except OSError as e:
+    print("Error:", e)
